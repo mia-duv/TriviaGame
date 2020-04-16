@@ -1,7 +1,7 @@
 var timer; 
 var game = {
 
-counter: 10,
+counter: 30,
 
 countdown: function() {
 	game.counter--;
@@ -10,6 +10,7 @@ countdown: function() {
       console.log("TIME UP");
 	  clearInterval(timer);
 	  $("#sub-wrapper h2").remove();
+	  $("#userInput").remove();
 	$("#answerDisplay").prepend(
 		"<p>'Time is up! Try again'</p>"
 	);
