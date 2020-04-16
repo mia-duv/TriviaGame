@@ -5,61 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Trivia!</title>
+    <title>Jeopardy Trivia!</title>
 </head>
 <body>
-    <h1>Trivia!</h1>
-    <form>
-        <p>1. How many continents are there?</p>
-          <input type="radio" value="number">5<br>
-          <input type="radio" value="number">7<br>
-          <input type="radio" value="number">9<br>
+    <div id="container">
+       <div id="startGame">
+          <h1>Jeopardy Trivia!</h1>
+          <button id="btnNext">Start Game</button>
+       </div>
+      
+       <div id="questionDisplay">
+         <div id="sub-wrapper">
+          <p id="question"></p>
+          <form>
+              <input type="text" placeholder="Enter you answer here" id="userAnswer">
+              <input type="button" value="Submit" id="submit">
+          </form>
+           
+          </div>
+       </div>
+        <br>
+       <!-- Reveal Answer -->
 
-        <p>2. How many time zones are there in the world?</p>
-          <input type="radio" value="number">24<br>
-          <input type="radio" value="number">28<br>
-          <input type="radio" value="number">12<br>
-
-        <p>3. What does "Vader" mean in Darth Vader?</p>
-          <input type="radio" value="name">invasion<br>
-          <input type="radio" value="name">evil<br>
-          <input type="radio" value="name">father<br>
-
-        <p>4. What is the capital city of Paraguay?</p>
-          <input type="radio" value="name">San Lorenzo<br>
-          <input type="radio" value="name">Asuncion<br>
-          <input type="radio" value="name">Capiata<br>
-
-        <p>5. How many legs does a lobster have?</p>
-          <input type="radio" value="number">10<br>
-          <input type="radio" value="number">2<br>
-          <input type="radio" value="number">8<br>
-
-        <p>6. Name the number that is three more than one-fifth of one-tenth of one-half of 5,000.</p>
-          <input type="radio" value="number">503<br>
-          <input type="radio" value="number">108<br>
-          <input type="radio" value="number">53<br>
-
-        <p>7. What is the largest two digit prime number?</p>
-          <input type="radio" value="number">92<br>
-          <input type="radio" value="number">97<br>
-          <input type="radio" value="number">99<br>
-
-        <p>8. What country's flag has only one color in it?</p>
-          <input type="radio" value="name">libya<br>
-          <input type="radio" value="name">ghana<br>
-          <input type="radio" value="name">japan<br>
-
-        <p>9. When did NBA players start playing in the Olympics?</p>
-          <input type="radio" value="number">1984<br>
-          <input type="radio" value="number">1996<br>
-          <input type="radio" value="number">1992<br>
-
-        <p>10. Which fruit has more genes than a human?</p>
-          <input type="radio" value="name">mango<br>
-          <input type="radio" value="name">tomatoes<br>
-          <input type="radio" value="name">apple<br>
-    </form>
+       <div id="answerDisplay">
+         
+      
+        
+        
+     </div>
+        
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
